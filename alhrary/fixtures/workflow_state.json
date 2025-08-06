@@ -1,0 +1,173 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2025-07-24 18:58:02.958504",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2025-07-24 18:58:02.959625",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2025-07-24 18:58:02.960735",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:24:43.117763",
+  "name": "جديد",
+  "style": "Primary",
+  "workflow_state_name": "جديد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:29:59.334542",
+  "name": "احالة الى اللجنة",
+  "style": "Warning",
+  "workflow_state_name": "احالة الى اللجنة"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:29:51.240215",
+  "name": "محال الى اللجنة",
+  "style": "Inverse",
+  "workflow_state_name": "محال الى اللجنة"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:24:55.805124",
+  "name": "معتمد",
+  "style": "Success",
+  "workflow_state_name": "معتمد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-29 11:10:51.880371",
+  "name": "مرفوض",
+  "style": "",
+  "workflow_state_name": "مرفوض"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:26:08.612309",
+  "name": "مستمر",
+  "style": "Success",
+  "workflow_state_name": "مستمر"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:26:15.731069",
+  "name": "موقوف",
+  "style": "Inverse",
+  "workflow_state_name": "موقوف"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:25:07.283719",
+  "name": "منقطع",
+  "style": "Danger",
+  "workflow_state_name": "منقطع"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:29:18.972614",
+  "name": "قيد المراجعة",
+  "style": "Inverse",
+  "workflow_state_name": "قيد المراجعة"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:25:58.954321",
+  "name": "محال لوحدة الجاليات",
+  "style": "Warning",
+  "workflow_state_name": "محال لوحدة الجاليات"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:25:43.117967",
+  "name": "قيد إحالة لرئيس القسم",
+  "style": "Warning",
+  "workflow_state_name": "قيد إحالة لرئيس القسم"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 13:25:13.492607",
+  "name": "معتمد نهائي",
+  "style": "Success",
+  "workflow_state_name": "معتمد نهائي"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 14:39:18.704195",
+  "name": "ترشيح",
+  "style": "Primary",
+  "workflow_state_name": "ترشيح"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 14:39:04.654536",
+  "name": "إعتماد النشاط",
+  "style": "Warning",
+  "workflow_state_name": "إعتماد النشاط"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 14:38:58.649608",
+  "name": "نشاط معتمد",
+  "style": "Success",
+  "workflow_state_name": "نشاط معتمد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-06 11:44:47.438083",
+  "name": "واعظ مرشح",
+  "style": "",
+  "workflow_state_name": "واعظ مرشح"
+ }
+]

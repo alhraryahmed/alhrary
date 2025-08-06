@@ -4,7 +4,23 @@ app_publisher = "alhrary"
 app_description = "culture"
 app_email = "alhraryahmed110@gmail.com"
 app_license = "mit"
-
+doc_events = {
+    "lagna pre": {
+        "on_update": "اسم_التطبيق.api.sync_workflow_state"
+    }
+}
+fixtures = [
+    "Custom Field",
+    "Property Setter",
+    "Client Script",
+    "Server Script",
+    "Workflow",
+    "Workflow State",
+    "Workflow Action Master",
+    "Report",
+    "Dashboard Chart",
+    "Dashboard Chart Source"
+]
 # Apps
 # ------------------
 

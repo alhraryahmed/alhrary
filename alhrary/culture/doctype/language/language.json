@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "autoname": "field:language_code",
+ "creation": "2014-08-22 16:12:17.249590",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "language_code",
+  "language_name",
+  "flag",
+  "based_on"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "language_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Language Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "language_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Language Name",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "flag",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Flag"
+  },
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Link",
+   "label": "Based On",
+   "options": "Language"
+  }
+ ],
+ "icon": "fa fa-globe",
+ "in_create": 1,
+ "links": [],
+ "modified": "2025-08-06 11:38:04.171354",
+ "modified_by": "Administrator",
+ "module": "culture",
+ "name": "Language",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0645\u062f\u064a\u0631 \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0631\u0626\u064a\u0633 \u0627\u0644\u0642\u0633\u0645 \u0628\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0631\u0626\u064a\u0633 \u0627\u0644\u0648\u062d\u062f\u0629 \u0628\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0645\u0648\u0638\u0641 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629 \u0628\u0627\u0644\u062f\u064a\u0648\u0627\u0646",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "language_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "language_name",
+ "track_changes": 1
+}

@@ -1,0 +1,107 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-24 18:58:02.973664",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-24 18:58:02.974655",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-24 18:58:02.975613",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-29 11:07:51.582954",
+  "name": "احالة الى اللجنة",
+  "workflow_action_name": "احالة الى اللجنة"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-29 11:08:52.985875",
+  "name": "محال الى اللجنة",
+  "workflow_action_name": "محال الى اللجنة"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-29 11:14:27.285387",
+  "name": "إعتماد",
+  "workflow_action_name": "إعتماد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-29 11:14:36.152763",
+  "name": "رفض",
+  "workflow_action_name": "رفض"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-30 10:40:28.927463",
+  "name": "مستمر",
+  "workflow_action_name": "مستمر"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-30 10:42:36.861449",
+  "name": "موقوف",
+  "workflow_action_name": "موقوف"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-30 10:57:05.329693",
+  "name": "منقطع",
+  "workflow_action_name": "منقطع"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-30 10:59:50.084308",
+  "name": "جديد",
+  "workflow_action_name": "جديد"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-04 16:20:31.719636",
+  "name": "إرسال الطلب",
+  "workflow_action_name": "إرسال الطلب"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-04 16:21:36.370517",
+  "name": "إحالة لرئيس القسم",
+  "workflow_action_name": "إحالة لرئيس القسم"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-04 16:22:30.219464",
+  "name": "تحويل لوحدة الجاليات",
+  "workflow_action_name": "تحويل لوحدة الجاليات"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-04 16:23:03.182742",
+  "name": "ترشيح واعظ",
+  "workflow_action_name": "ترشيح واعظ"
+ }
+]

@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{\u0637\u0644\u0628_\u0627\u0644\u0646\u0634\u0627\u0637}",
+ "creation": "2025-08-04 15:35:14.900896",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "\u062a\u0631\u0634\u064a\u062d_\u0648\u0627\u0639\u0638_section",
+  "dataa",
+  "\u0637\u0644\u0628_\u0627\u0644\u0646\u0634\u0627\u0637",
+  "type_act",
+  "enwan",
+  "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+  "tarre",
+  "lang",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "\u062a\u0631\u0634\u064a\u062d_\u0648\u0627\u0639\u0638_section",
+   "fieldtype": "Section Break",
+   "label": "\u062a\u0631\u0634\u064a\u062d \u0648\u0627\u0639\u0638"
+  },
+  {
+   "fieldname": "dataa",
+   "fieldtype": "Link",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0648\u0627\u0639\u0638",
+   "options": "Data pre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type_act",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0646\u0634\u0627\u0637",
+   "options": "send active",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "lang",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0644\u063a\u0629",
+   "options": "Person Languages",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "type_act.enwan",
+   "fieldname": "enwan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0639\u0646\u0648\u0627\u0646 ",
+   "options": "enwan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "tar pre",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "\u0637\u0644\u0628_\u0627\u0644\u0646\u0634\u0627\u0637.datee",
+   "fieldname": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "fieldtype": "Link",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0646\u0634\u0627\u0637 \u0648\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "options": "send active"
+  },
+  {
+   "fieldname": "tarre",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "\u062a\u0631\u0634\u064a\u062d",
+   "options": "\n\u062a\u0631\u0634\u064a\u062d\n\u0625\u0639\u062a\u0645\u0627\u062f \u0627\u0644\u0646\u0634\u0627\u0637\n\u0646\u0634\u0627\u0637 \u0645\u0639\u062a\u0645\u062f",
+   "read_only": 1
+  },
+  {
+   "fieldname": "\u0637\u0644\u0628_\u0627\u0644\u0646\u0634\u0627\u0637",
+   "fieldtype": "Link",
+   "label": "\u0637\u0644\u0628 \u0627\u0644\u0646\u0634\u0627\u0637",
+   "options": "send active",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-06 12:51:53.413637",
+ "modified_by": "Administrator",
+ "module": "culture",
+ "name": "tar pre",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0645\u062f\u064a\u0631 \u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0631\u0626\u064a\u0633 \u0627\u0644\u0642\u0633\u0645 \u0628\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0631\u0626\u064a\u0633 \u0627\u0644\u0648\u062d\u062f\u0629 \u0628\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0645\u0648\u0638\u0641 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629 \u0628\u0627\u0644\u062f\u064a\u0648\u0627\u0646",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0645\u0648\u0638\u0641 \u0627\u0644\u0645\u0643\u062a\u0628 \u0628\u0642\u0633\u0645 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

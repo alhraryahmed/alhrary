@@ -1,0 +1,21 @@
+[
+ {
+  "allow_guest": 0,
+  "api_method": null,
+  "cron_format": null,
+  "disabled": 1,
+  "docstatus": 0,
+  "doctype": "Server Script",
+  "doctype_event": "Before Insert",
+  "enable_rate_limit": 0,
+  "event_frequency": "All",
+  "modified": "2025-07-29 13:11:11.528462",
+  "module": "culture",
+  "name": "script",
+  "rate_limit_count": 5,
+  "rate_limit_seconds": 86400,
+  "reference_doctype": "Data pre",
+  "script": "# لنفترض أن في Doctype Waez يوجد حقل Link إلى السجل الآخر اسمه related_record\r\n# وفي Doctype الآخر يوجد حقل status نريد تحديثه\r\n\r\nif doc.workflow_state == \"معتمد\":\r\n    frappe.db.set_value(\"اسم الدوكتايب الآخر\", doc.related_record, \"status\", \"مستمر\")\r\nelif doc.workflow_state == \"مرفوض\":\r\n    frappe.db.set_value(\"اسم الدوكتايب الآخر\", doc.related_record, \"status\", \"مرفوض\")\r\n",
+  "script_type": "DocType Event"
+ }
+]

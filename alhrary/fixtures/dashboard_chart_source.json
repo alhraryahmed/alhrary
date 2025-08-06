@@ -1,0 +1,20 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Dashboard Chart Source",
+  "modified": "2019-04-09 18:30:49.943174",
+  "module": "Accounts",
+  "name": "Account Balance Timeline",
+  "source_name": "Account Balance Timeline",
+  "timeseries": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Dashboard Chart Source",
+  "modified": "2020-05-14 14:27:44.108017",
+  "module": "Stock",
+  "name": "Warehouse wise Stock Value",
+  "source_name": "Warehouse wise Stock Value",
+  "timeseries": 0
+ }
+]

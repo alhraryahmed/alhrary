@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{data_wa}-{end_e}",
+ "creation": "2025-08-04 11:44:27.065059",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wk4f",
+  "amended_from",
+  "data_wa",
+  "hala",
+  "age",
+  "\u062a\u0642\u064a\u064a\u0645_\u0627\u0644\u0648\u0627\u0639\u0638_section",
+  "\u062f\u0631\u062c\u0627\u062a_\u0627\u0644\u0648\u0627\u0639\u0638_column",
+  "mark_sh",
+  "mark_st",
+  "mark_tl",
+  "save_qu",
+  "marrkk",
+  "end_e",
+  "\u0627\u0644\u0645\u0642\u064a\u0645_column",
+  "useer",
+  "nootes",
+  "sig"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wk4f",
+   "fieldtype": "Section Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0648\u0627\u0639\u0638"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "lagna pree",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "data_wa",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0648\u0627\u0639\u0638",
+   "options": "Data pre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hala",
+   "fieldtype": "Link",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0627\u0633\u062a\u0645\u0631\u0627\u0631\u064a\u0629",
+   "options": "Workflow State",
+   "read_only": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "(\u0627\u0644\u0639\u0645\u0631 (\u064a\u062c\u0628 \u0623\u0646 \u0644\u0627 \u064a\u0642\u0644 \u0639\u0646 25 \u0639\u0627\u0645"
+  },
+  {
+   "fieldname": "\u062a\u0642\u064a\u064a\u0645_\u0627\u0644\u0648\u0627\u0639\u0638_section",
+   "fieldtype": "Section Break",
+   "label": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0648\u0627\u0639\u0638"
+  },
+  {
+   "fieldname": "\u062f\u0631\u062c\u0627\u062a_\u0627\u0644\u0648\u0627\u0639\u0638_column",
+   "fieldtype": "Column Break",
+   "label": "\u062f\u0631\u062c\u0627\u062a \u0627\u0644\u0648\u0627\u0639\u0638"
+  },
+  {
+   "fieldname": "mark_sh",
+   "fieldtype": "Data",
+   "label": "\u062f\u0631\u062c\u0629 \u0627\u0644\u0639\u0644\u0645 \u0627\u0644\u0634\u0631\u0639\u064a",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "mark_st",
+   "fieldtype": "Data",
+   "label": "\u062f\u0631\u062c\u0629 \u0627\u0644\u062d\u0636\u0648\u0631",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "mark_tl",
+   "fieldtype": "Data",
+   "label": "\u062f\u0631\u062c\u0629 \u0627\u0644\u062a\u0644\u0627\u0648\u0629",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "save_qu",
+   "fieldtype": "Select",
+   "label": "\u0645\u0642\u062f\u0627\u0631 \u0627\u0644\u062d\u0642\u0638 \u0645\u0646 \u0627\u0644\u0642\u0631\u0622\u0646",
+   "options": "\n\u0627\u0644\u0642\u0631\u0622\u0646 \u0627\u0644\u0643\u0631\u064a\u0645 \u0643\u0627\u0645\u0644\n\u062b\u0644\u0627\u062b\u0629 \u0623\u0631\u0628\u0627\u0639 \u0627\u0644\u0642\u0631\u0622\u0646\n\u0646\u0635\u0641 \u0627\u0644\u0642\u0631\u0622\u0646\n\u0631\u0628\u0639 \u0627\u0644\u0642\u0631\u0622\u0646\n\u0623\u0642\u0644 \u0645\u0646 \u0627\u0644\u0631\u0628\u0639",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "marrkk",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u062f\u0631\u062c\u0629 \u0627\u0644\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0639\u0627\u0645 \u0645\u0646 %100",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "end_e",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0642\u0631\u0627\u0631 \u0627\u0644\u0646\u0647\u0627\u0626\u064a",
+   "options": "\u064a\u0635\u0644\u062d\n\u0644\u0627 \u064a\u0635\u0644\u062d",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "\u0627\u0644\u0645\u0642\u064a\u0645_column",
+   "fieldtype": "Column Break",
+   "label": "\u0627\u0644\u0645\u0642\u064a\u0645"
+  },
+  {
+   "fieldname": "useer",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0642\u064a\u0645",
+   "options": "User",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "nootes",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0640\u0640\u0640\u0640\u0640\u0627\u062a",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "sig",
+   "fieldtype": "Signature",
+   "label": "\u0627\u0644\u062a\u0648\u0642\u064a\u0639 \u0648\u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f",
+   "permlevel": 2
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-06 11:47:09.346820",
+ "modified_by": "Administrator",
+ "module": "culture",
+ "name": "lagna pree",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

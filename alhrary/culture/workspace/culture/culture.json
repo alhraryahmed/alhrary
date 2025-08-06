@@ -1,0 +1,192 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"xl-zjoUtUf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0634\u0624\u0648\u0646 \u0627\u0644\u062b\u0642\u0627\u0641\u064a\u0629 \u0648\u0627\u0644\u062f\u0639\u0648\u064a\u0629</span>\",\"col\":12}},{\"id\":\"ZW6fSXUJl4\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NhbBCSZQ9z\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0642\u0633\u0645 \u0627\u0644\u0648\u0639\u0640\u0640\u0640\u0640\u0640\u0640\u0627\u0638\",\"col\":4}},{\"id\":\"AKaxfkOob-\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0648\u0627\u0644\u0641\u0627\u0639\u0644\u064a\u0627\u062a\",\"col\":5}},{\"id\":\"gzGQCsrxZp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0627\u0644\u0645\u062d\u0627\u0644 \u0627\u0644\u0649 \u0644\u062c\u0646\u0629 \u0642\u0628\u0648\u0644 \u0627\u0644\u0648\u0639\u0627\u0638\",\"col\":4}},{\"id\":\"YZ-LoQlhfX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0627\u0646\u0634\u0637\u0629\",\"col\":5}},{\"id\":\"bC9ymlgYbJ\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0627\u0636\u0627\u0641\u0640\u0640\u0640\u0640\u0640\u0627\u062a\",\"col\":4}},{\"id\":\"iRdFe7j1d2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"i5ofVz1BEK\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>\u0627\u0644\u0625\u062d\u0635\u0627\u0626\u064a\u0627\u062a \u0648\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631</b></span>\",\"col\":3}},{\"id\":\"mqtrc7LNJ4\",\"type\":\"spacer\",\"data\":{\"col\":9}},{\"id\":\"cuKFH2gJ3Z\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u062d\u0635\u0627\u0626\u064a\u0627\u062a \u0645\u062a\u0627\u0628\u0639\u0629 \u0627\u0644\u0627\u0646\u0634\u0637\u0629\",\"col\":3}},{\"id\":\"G12kXzOcbf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u0627\u0633\u062a\u0645\u0631\u0627\u0631\u064a\u0629 \u0627\u0644\u0648\u0639\u0627\u0638\",\"col\":3}},{\"id\":\"mgFDkuQWfn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u0627\u0644\u0627\u0646\u0634\u0637\u0629 \u0648\u0627\u0644\u0641\u0627\u0639\u0644\u064a\u0627\u062a\",\"col\":3}},{\"id\":\"eazkQgkLyU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u062d\u0627\u0644\u0629 \u0642\u0628\u0648\u0644 \u0627\u0644\u0648\u0639\u0627\u0638\",\"col\":3}},{\"id\":\"rqYk0XSZAG\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2025-07-24 17:05:11.759630",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "education",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "culture",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0627\u0636\u0627\u0641\u0640\u0640\u0640\u0640\u0640\u0627\u062a",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u062c\u0627\u0644\u064a\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0640\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Galia",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0644\u063a\u0640\u0640\u0640\u0640\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Language",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0648\u0627\u0644\u0641\u0627\u0639\u0644\u064a\u0627\u062a",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0631\u0634\u064a\u062d \u0627\u0644\u0648\u0639\u0627\u0638",
+   "link_count": 0,
+   "link_to": "tar pre",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0639\u0646\u0627\u0648\u064a\u0646 \u0627\u0644\u0623\u0646\u0634\u0637\u0629",
+   "link_count": 0,
+   "link_to": "enwan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0643\u0627\u0641\u0629 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u0645\u0631\u0633\u0644\u0629",
+   "link_count": 0,
+   "link_to": "send active",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0642\u0633\u0645 \u0627\u0644\u0648\u0639\u0640\u0640\u0640\u0640\u0640\u0640\u0627\u0638",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0648\u0639\u0640\u0640\u0640\u0627\u0638",
+   "link_count": 0,
+   "link_to": "Data pre",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0644\u062c\u0646\u0629 \u0642\u0628\u0648\u0644 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "link_count": 0,
+   "link_to": "lagna pree",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062d\u0627\u0644\u0627\u062a \u0642\u0628\u0648\u0644 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "link_count": 0,
+   "link_to": "status_1",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062d\u0627\u0644\u0627\u062a \u0627\u0633\u062a\u0645\u0631\u0627\u0631\u064a\u0629 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "link_count": 0,
+   "link_to": "state2",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-08-06 12:57:12.249617",
+ "modified_by": "Administrator",
+ "module": "culture",
+ "name": "culture",
+ "number_cards": [],
+ "owner": "alhraryahmed110@gmail.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0625\u062d\u0635\u0627\u0626\u064a\u0627\u062a \u0645\u062a\u0627\u0628\u0639\u0629 \u0627\u0644\u0627\u0646\u0634\u0637\u0629",
+   "link_to": "\u0645\u062a\u0627\u0628\u0639\u0629 \u0627\u0644\u0627\u0646\u0634\u0637\u0629",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u0627\u0644\u0627\u0646\u0634\u0637\u0629 \u0648\u0627\u0644\u0641\u0627\u0639\u0644\u064a\u0627\u062a",
+   "link_to": "\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0627\u0646\u0634\u0637\u0629",
+   "link_to": "send active",
+   "stats_filter": "[[\"send active\",\"workflow_state_active\",\"=\",\"\u062c\u062f\u064a\u062f\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u062d\u0627\u0644\u0629 \u0642\u0628\u0648\u0644 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "link_to": "\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u062d\u0627\u0644\u0629 \u0642\u0628\u0648\u0644 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "\u0627\u0644\u0645\u062d\u0627\u0644 \u0627\u0644\u0649 \u0644\u062c\u0646\u0629 \u0642\u0628\u0648\u0644 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "link_to": "lagna pree",
+   "stats_filter": "[[\"lagna pree\",\"workflow_state_lagna\",\"=\",\"\u0627\u062d\u0627\u0644\u0629 \u0627\u0644\u0649 \u0627\u0644\u0644\u062c\u0646\u0629\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u0627\u0633\u062a\u0645\u0631\u0627\u0631\u064a\u0629 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "link_to": "\u0625\u062d\u0635\u0627\u0626\u064a\u0629 \u0627\u0633\u062a\u0645\u0631\u0627\u0631\u064a\u0629 \u0627\u0644\u0648\u0639\u0627\u0638",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "culture"
+}

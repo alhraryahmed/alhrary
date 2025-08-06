@@ -1,0 +1,145 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Data pre",
+  "enabled": 1,
+  "modified": "2025-07-29 13:44:26.200937",
+  "module": "culture",
+  "name": "state",
+  "script": "frappe.ui.form.on(\"MyDocType\", {\r\n    status1: function(frm) {\r\n        if(frm.doc.status1 === \"معتمد\") {\r\n            frm.set_value(\"state2\", \"مستمر\");\r\n        } else if(frm.doc.status1 === \"مرفوض\") {\r\n            frm.set_value(\"state2\", \"منقطع\");\r\n        } else {\r\n            // إذا تريد تعيد الحالة للحالة الافتراضية مثلاً \"جديد\"\r\n            frm.set_value(\"state2\", \"جديد\");\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Data pre",
+  "enabled": 0,
+  "modified": "2025-07-29 17:16:25.277332",
+  "module": "culture",
+  "name": "state workflo",
+  "script": "frappe.ui.form.on('lagna pre', {\r\n    workflow_state: function(frm) {\r\n        if (frm.doc.workflow_state === \"معتمد\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تنبيه',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    d.hide();\r\n                    frm.set_value('state2', 'مقبول'); // تغيير حالة التعاون تلقائيًا\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم اعتماد الطلب بنجاح.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:green;\">تم اعتماد الطلب!</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        } else if (frm.doc.workflow_state === \"مرفوض\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تنبيه',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    d.hide();\r\n                    frm.set_value('state2', 'منقطع'); // تغيير حالة التعاون تلقائيًا\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم رفض الطلب.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:red;\">تم رفض الطلب!</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna pre",
+  "enabled": 1,
+  "modified": "2025-07-29 17:20:24.251555",
+  "module": "culture",
+  "name": "massege",
+  "script": "frappe.ui.form.on('lagna pre', {\r\n    workflow_state: function(frm) {\r\n        if (frm.doc.workflow_state_lagna === \"معتمد\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تنبيه',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    d.hide();\r\n                    frm.set_value('state2', 'مقبول'); // تغيير حالة التعاون تلقائيًا\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم اعتماد الطلب بنجاح.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:green;\">تم اعتماد الطلب!</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        } else if (frm.doc.workflow_state_lagna === \"مرفوض\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تنبيه',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    d.hide();\r\n                    frm.set_value('state2', 'منقطع'); // تغيير حالة التعاون تلقائيًا\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم رفض الطلب.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:red;\">تم رفض الطلب!</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna pre",
+  "enabled": 1,
+  "modified": "2025-07-30 15:10:19.921994",
+  "module": "culture",
+  "name": "lagnaa",
+  "script": "frappe.ui.form.on('lagna pre', {\r\n    workflow_state: function(frm) {\r\n        if (frm.doc.workflow_state === \"معتمد\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تم اعتماد الطلب',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    frm.set_value('state2', 'مقبول');\r\n                    d.hide();\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم اعتماد الطلب بنجاح.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:green;\">تم اعتماد هذا الطلب، وهو قيد التنفيذ الآن.</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        } else if (frm.doc.workflow_state === \"مرفوض\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تم رفض الطلب',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    frm.set_value('state2', 'منقطع');\r\n                    d.hide();\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم رفض الطلب.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:red;\">تم رفض هذا الطلب، ولا يمكن متابعته.</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna pre",
+  "enabled": 1,
+  "modified": "2025-07-30 18:18:04.538177",
+  "module": "culture",
+  "name": "update",
+  "script": "frappe.ui.form.on('lagna pre', {\r\n    refresh: function(frm) {\r\n        if (frm.doc.data_wa) {\r\n            frm.add_custom_button(__('تحديث الحالة'), function() {\r\n                frappe.set_route('Form', 'Data pre', frm.doc.data_wa);\r\n            });\r\n        } else {\r\n            frm.add_custom_button(__('تحديث الحالة'), function() {\r\n                frappe.msgprint(__('الرجاء تحديد بيانات الواعظ أولاً'));\r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna pre",
+  "enabled": 1,
+  "modified": "2025-08-04 12:14:27.226945",
+  "module": "culture",
+  "name": "age",
+  "script": "frappe.ui.form.on('lagna pre', { \n    validate: function(frm) {\n        if (frm.doc.age < 25) {\n            frappe.msgprint(__('العمر يجب أن لا يقل عن 25 عاماً'));\n            frappe.validated = false;\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Data pre",
+  "enabled": 1,
+  "modified": "2025-08-03 14:36:34.721235",
+  "module": "culture",
+  "name": "بطاقة",
+  "script": "frappe.ui.form.on('Data pre', {\r\n    refresh: function(frm) {\r\n        if (frm.doc.name) {\r\n            frappe.require('https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js', () => {\r\n                // تنظيف محتوى الحقل\r\n                frm.fields_dict.qr_code.$wrapper.empty();\r\n\r\n                // إنشاء Div جديد للـ QR Code\r\n                let qr_div = $('<div>').appendTo(frm.fields_dict.qr_code.$wrapper);\r\n\r\n                // توليد QR Code يحتوي على اسم السجل (name)\r\n                 let qr_text = 'الاسم: ' + frm.doc.name_for + '\\nالحالة: ' + frm.doc.workflow_state;\r\n                new QRCode(qr_div[0], {\r\n    text: qr_text,  // ✅ هنا نستخدم النص المركب (الاسم + الحالة)\r\n    width: 150,\r\n    height: 150\r\n              });\r\n\r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "QR Reader",
+  "enabled": 1,
+  "modified": "2025-08-03 14:26:34.268989",
+  "module": "culture",
+  "name": "QR Reader",
+  "script": "frappe.ui.form.on('QR Reader', {\r\n    barcode_input: function(frm) {\r\n        if (frm.doc.barcode_input) {\r\n            // البحث في DocType Data pre باستخدام Barcode Input كاسم سجل\r\n            frappe.db.get_list('Data pre', {\r\n                filters: { name: frm.doc.barcode_input },\r\n                fields: ['workflow_state']\r\n            }).then(results => {\r\n                if(results.length) {\r\n                    let state = results[0].workflow_state;\r\n                    frappe.msgprint(`حالة المتعاون: ${state}`);\r\n                } else {\r\n                    frappe.msgprint('لم يتم العثور على المتعاون.');\r\n                }\r\n                // إعادة تهيئة الحقل للإدخال التالي\r\n                frm.set_value('barcode_input', '');\r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna pree",
+  "enabled": 1,
+  "modified": "2025-08-04 12:15:04.115284",
+  "module": "culture",
+  "name": "agee",
+  "script": "frappe.ui.form.on('lagna pree', { \n    validate: function(frm) {\n        if (frm.doc.age < 25) {\n            frappe.msgprint(__('العمر يجب أن لا يقل عن 25 عاماً'));\n            frappe.validated = false;\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna pree",
+  "enabled": 1,
+  "modified": "2025-08-04 12:15:49.364116",
+  "module": "culture",
+  "name": "updatee",
+  "script": "frappe.ui.form.on('lagna pree', {\r\n    refresh: function(frm) {\r\n        if (frm.doc.data_wa) {\r\n            frm.add_custom_button(__('تحديث الحالة'), function() {\r\n                frappe.set_route('Form', 'Data pre', frm.doc.data_wa);\r\n            });\r\n        } else {\r\n            frm.add_custom_button(__('تحديث الحالة'), function() {\r\n                frappe.msgprint(__('الرجاء تحديد بيانات الواعظ أولاً'));\r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna pree",
+  "enabled": 1,
+  "modified": "2025-08-04 12:18:37.971282",
+  "module": "culture",
+  "name": "lagnaaa",
+  "script": "frappe.ui.form.on('lagna pree', {\r\n    workflow_state: function(frm) {\r\n        if (frm.doc.workflow_state === \"معتمد\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تم اعتماد الطلب',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    frm.set_value('state2', 'مقبول');\r\n                    d.hide();\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم اعتماد الطلب بنجاح.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:green;\">تم اعتماد هذا الطلب، وهو قيد التنفيذ الآن.</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        } else if (frm.doc.workflow_state === \"مرفوض\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تم رفض الطلب',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    frm.set_value('state2', 'منقطع');\r\n                    d.hide();\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم رفض الطلب.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:red;\">تم رفض هذا الطلب، ولا يمكن متابعته.</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "lagna pree",
+  "enabled": 1,
+  "modified": "2025-08-04 12:18:31.048596",
+  "module": "culture",
+  "name": "massegeee",
+  "script": "frappe.ui.form.on('lagna pree', {\r\n    workflow_state: function(frm) {\r\n        if (frm.doc.workflow_state_lagna === \"معتمد\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تنبيه',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    d.hide();\r\n                    frm.set_value('state2', 'مقبول'); // تغيير حالة التعاون تلقائيًا\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم اعتماد الطلب بنجاح.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:green;\">تم اعتماد الطلب!</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        } else if (frm.doc.workflow_state_lagna === \"مرفوض\") {\r\n            let d = new frappe.ui.Dialog({\r\n                title: 'تنبيه',\r\n                primary_action_label: 'موافق',\r\n                primary_action() {\r\n                    d.hide();\r\n                    frm.set_value('state2', 'منقطع'); // تغيير حالة التعاون تلقائيًا\r\n                },\r\n                fields: [\r\n                    {\r\n                        label: 'تم رفض الطلب.',\r\n                        fieldname: 'info',\r\n                        fieldtype: 'HTML',\r\n                        options: '<div style=\"font-size:16px; color:red;\">تم رفض الطلب!</div>'\r\n                    }\r\n                ]\r\n            });\r\n            d.show();\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "send active",
+  "enabled": 1,
+  "modified": "2025-08-06 12:55:16.124418",
+  "module": "culture",
+  "name": "ترشييييح واعظ",
+  "script": "frappe.ui.form.on('send active', {\r\n    refresh: function(frm) {\r\n        if (frm.doc.staaaate === 'محال لوحدة الجاليات') {\r\n            frm.add_custom_button(__('ترشيح واعظ'), function() {\r\n                // فتح نموذج جديد من 'tar pre' مع تعبئة حقل 'طلب_النشاط'\r\n                frappe.new_doc('tar pre').then(doc => {\r\n                    doc.request = frm.doc.name; // قد يكون اسم الحقل هنا طلب_النشاط أو request — استبدل الاسم حسب الحقل الصحيح\r\n                    doc.طلب_النشاط = frm.doc.name; // جرب هذا إذا كان الاسم بالعربي\r\n                    doc.save().then(() => {\r\n                        frappe.set_route('Form', 'tar pre', doc.name);\r\n                    });\r\n                });\r\n            });\r\n        }\r\n    }\r\n});\r\n",
+  "view": "Form"
+ }
+]
