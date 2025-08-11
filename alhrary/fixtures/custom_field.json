@@ -11,7 +11,6 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Custom Field",
-  "dt": "Data pre",
   "fetch_from": null,
   "fetch_if_empty": 0,
   "fieldname": "workflow_state",
